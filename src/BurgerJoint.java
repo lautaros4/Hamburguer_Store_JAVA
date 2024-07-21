@@ -15,7 +15,7 @@ public class BurgerJoint {
 
     public Double calculateCartPrice(){
         Double finalprice = 0.0;
-        for (Product product : productCart) { // Usar Product clase abstracta acá hace que el dia de mañana pueda haber más tipos de productos y lo va a saber calcular sin tantos Ifs.
+        for (Product product : productCart) { 
             finalprice += product.calculatePrice();
         }
         return finalprice;
